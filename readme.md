@@ -4,6 +4,8 @@ This is a sample student repository for the Wolfram Summer School 2018. You can 
 
 Thing to do to get started with GIT:
 
+# This is a header
+
 ## Create a GitHub account
 https://github.com/join
 
