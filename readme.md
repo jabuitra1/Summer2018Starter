@@ -9,6 +9,9 @@ Thing to do to get started with GIT:
 ## Create a GitHub account
 https://github.com/join
 
+## This is another title
+and more text
+
 ## Create a new repo
 you can either create a new repo or fork this one
 
