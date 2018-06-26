@@ -1,0 +1,213 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7578,        205]
+NotebookOptionsPosition[      4984,        154]
+NotebookOutlinePosition[      5365,        171]
+CellTagsIndexPosition[      5322,        168]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Section", "Section",ExpressionUUID->"333fa35a-6c4c-4ada-b578-bdc7e317632f"],
+
+Cell[CellGroupData[{
+
+Cell["Subsection", "Subsection",ExpressionUUID->"f5829792-8cd0-4525-b41a-59b294f16daa"],
+
+Cell[CellGroupData[{
+
+Cell["Sub sub section", "Subsubsection",ExpressionUUID->"804ccc22-6ad4-4115-bb5e-7b8c19b683fc"],
+
+Cell["This is text,  Command-7", "Text",ExpressionUUID->"7edeb193-61a7-492f-8744-b81fa31d21b8"],
+
+Cell["this is text", "Text",ExpressionUUID->"4878aaed-8757-46f4-8064-b5ae8459b70b"],
+
+Cell[BoxData[""], "Code",
+ CellLabel->"In[96]:=",ExpressionUUID->"5474ce36-39df-487e-a4a4-b29357594f4a"],
+
+Cell["\[Bullet] this is text", "Text",ExpressionUUID->"01e48f2e-ea47-4b88-b9c5-26df485cdf48"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["How to format code", "Section",ExpressionUUID->"13df816a-9ce5-4ae7-a9f1-cc52a13da562"],
+
+Cell[TextData[{
+ "use ",
+ StyleBox["code cells",
+  FontWeight->"Bold"],
+ " command-8 and ",
+ StyleBox["indentation",
+  FontWeight->"Bold"]
+}], "Text",ExpressionUUID->"6688668f-0424-4989-bd20-f0d1cd03063f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", "\n", "\t", 
+    RowBox[{
+     RowBox[{"x", "*", "2"}], ";", "\n", "\t", 
+     RowBox[{"Pause", "[", "15", "]"}], ";", "\n", "\t", "x"}]}], "\n", 
+   "]"}]}]], "Code",
+ CellLabel->"In[97]:=",ExpressionUUID->"8ad89c25-8bc7-49f4-aed5-6f594d8bce2e"],
+
+Cell["This is another example without code cells:", "Text",ExpressionUUID->"ed380db3-76ea-4675-bd4c-97aba18c9112"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"3","\"s\"","seconds","\"Seconds\""},
+     "Quantity"], "*", "15000."}], ",", "\"\<Hours\>\""}], "]"}]], "Input",
+ CellLabel->"In[95]:=",ExpressionUUID->"229187f3-02b3-493f-b440-0a89e61812bb"],
+
+Cell[BoxData[
+ TemplateBox[{"12.5`","\"h\"","hours","\"Hours\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[95]=",ExpressionUUID->"28621773-16b8-4287-af01-59422a7a3c3a"]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["Packages",
+  FontWeight->"Bold"],
+ " are better for version control.  In packages you put your functions and \
+call them from notebooks. In order to save memory on a notebook, delete \
+history ",
+ StyleBox["tracking",
+  FontWeight->"Bold"],
+ ".  History tracking makes it difficult to read in github.\nSo before \
+committing you should remove history. Try to have notebooks without data. \
+Notebooks with data should be scrapped. \n",
+ StyleBox["Eclipse",
+  FontWeight->"Bold"],
+ " is the editor recommended by Wolfram. and then Wolfram ",
+ StyleBox["Workbench",
+  FontWeight->"Bold"],
+ ".\nIntelliJ is an option.  sublime text plugin for editing.\nThere is also \
+a package editor in Mathematica without adding documentation."
+}], "Text",ExpressionUUID->"aec0d87d-2554-4f70-b6f9-3b5939ce9331"],
+
+Cell["If the function is short, you can use", "Text",ExpressionUUID->"6a3c23e2-c348-46a5-9b88-7e8d27866940"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", " ", "/@", " ", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]], "Code",
+ CellLabel->"In[98]:=",ExpressionUUID->"84a6bdfc-dd06-4207-b658-3b8f0532fbdf"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3"}], "}"}]], "Output",
+ CellLabel->"Out[98]=",ExpressionUUID->"86f7f62e-bdba-4106-9b37-bcd6033bc22e"]
+}, Open  ]],
+
+Cell["If the function is large it is better to be explicit", "Text",ExpressionUUID->"f3841f28-c026-4540-89df-e8b318d009e1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{"f", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}]], "Code",
+ CellLabel->
+  "In[101]:=",ExpressionUUID->"ea6edbd8-8a9a-49a2-8f69-8b35ac96ba13"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3"}], "}"}]], "Output",
+ CellLabel->
+  "Out[101]=",ExpressionUUID->"ada12ca2-3c2f-4ad2-a4d3-d6da752661c6"]
+}, Open  ]],
+
+Cell["Command-0 gives you a drop down of styles for formatting.", "Text",ExpressionUUID->"393bbada-fe1b-4b7c-8758-bad2f4f3ac32"],
+
+Cell["Apply the test of StringQ to the argument of the expression.", "Text",ExpressionUUID->"4c8dd488-f45e-4140-9d66-56ca4bd03860"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", 
+   RowBox[{"x_", "?", "StringQ"}], "]"}], ":=", "x"}]], "Input",
+ CellLabel->
+  "In[102]:=",ExpressionUUID->"4ef74596-e540-4523-9cb7-ca83cb8c6c16"]
+}, Open  ]]
+},
+WindowSize->{816, 848},
+WindowMargins->{{0, Automatic}, {Automatic, 3}},
+TrackCellChangeTimes->False,
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 81, 0, 67, "Section",ExpressionUUID->"333fa35a-6c4c-4ada-b578-bdc7e317632f"],
+Cell[CellGroupData[{
+Cell[686, 26, 87, 0, 54, "Subsection",ExpressionUUID->"f5829792-8cd0-4525-b41a-59b294f16daa"],
+Cell[CellGroupData[{
+Cell[798, 30, 95, 0, 45, "Subsubsection",ExpressionUUID->"804ccc22-6ad4-4115-bb5e-7b8c19b683fc"],
+Cell[896, 32, 95, 0, 35, "Text",ExpressionUUID->"7edeb193-61a7-492f-8744-b81fa31d21b8"],
+Cell[994, 34, 83, 0, 35, "Text",ExpressionUUID->"4878aaed-8757-46f4-8064-b5ae8459b70b"],
+Cell[1080, 36, 104, 1, 52, "Code",ExpressionUUID->"5474ce36-39df-487e-a4a4-b29357594f4a"],
+Cell[1187, 39, 93, 0, 35, "Text",ExpressionUUID->"01e48f2e-ea47-4b88-b9c5-26df485cdf48"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1341, 46, 92, 0, 67, "Section",ExpressionUUID->"13df816a-9ce5-4ae7-a9f1-cc52a13da562"],
+Cell[1436, 48, 205, 7, 35, "Text",ExpressionUUID->"6688668f-0424-4989-bd20-f0d1cd03063f"],
+Cell[1644, 57, 377, 10, 129, "Code",ExpressionUUID->"8ad89c25-8bc7-49f4-aed5-6f594d8bce2e"],
+Cell[2024, 69, 114, 0, 35, "Text",ExpressionUUID->"ed380db3-76ea-4675-bd4c-97aba18c9112"],
+Cell[CellGroupData[{
+Cell[2163, 73, 276, 6, 33, "Input",ExpressionUUID->"229187f3-02b3-493f-b440-0a89e61812bb"],
+Cell[2442, 81, 170, 3, 36, "Output",ExpressionUUID->"28621773-16b8-4287-af01-59422a7a3c3a"]
+}, Open  ]],
+Cell[2627, 87, 821, 18, 196, "Text",ExpressionUUID->"aec0d87d-2554-4f70-b6f9-3b5939ce9331"],
+Cell[3451, 107, 108, 0, 35, "Text",ExpressionUUID->"6a3c23e2-c348-46a5-9b88-7e8d27866940"],
+Cell[CellGroupData[{
+Cell[3584, 111, 195, 4, 52, "Code",ExpressionUUID->"84a6bdfc-dd06-4207-b658-3b8f0532fbdf"],
+Cell[3782, 117, 162, 3, 34, "Output",ExpressionUUID->"86f7f62e-bdba-4106-9b37-bcd6033bc22e"]
+}, Open  ]],
+Cell[3959, 123, 123, 0, 35, "Text",ExpressionUUID->"f3841f28-c026-4540-89df-e8b318d009e1"],
+Cell[CellGroupData[{
+Cell[4107, 127, 220, 6, 52, "Code",ExpressionUUID->"ea6edbd8-8a9a-49a2-8f69-8b35ac96ba13"],
+Cell[4330, 135, 166, 4, 34, "Output",ExpressionUUID->"ada12ca2-3c2f-4ad2-a4d3-d6da752661c6"]
+}, Open  ]],
+Cell[4511, 142, 128, 0, 35, "Text",ExpressionUUID->"393bbada-fe1b-4b7c-8758-bad2f4f3ac32"],
+Cell[4642, 144, 131, 0, 35, "Text",ExpressionUUID->"4c8dd488-f45e-4140-9d66-56ca4bd03860"],
+Cell[4776, 146, 192, 5, 30, "Input",ExpressionUUID->"4ef74596-e540-4523-9cb7-ca83cb8c6c16"]
+}, Open  ]]
+}
+]
+*)
+
