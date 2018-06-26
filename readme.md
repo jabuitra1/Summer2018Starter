@@ -41,6 +41,8 @@ the readme should contain:
 2. how to run your code
 3. examples, code documentation, etc
 
+Added a message
+
 ## Organize your code
 in this repository you will find 2 different ways to organize your code, the simple way and the programmer way.
 
