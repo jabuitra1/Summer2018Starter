@@ -871,12 +871,12 @@ StyleDefinitions->Notebook[{
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "LastModified"->{
-  Cell[400, 13, 225, 5, 52, "TemplateInstructions",ExpressionUUID->"1d20af4c-4b36-4bac-8bc5-9599211620c2",
-   CellTags->"LastModified"]},
  "AuthorInfo"->{
   Cell[650, 22, 218, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"47541fce-e5a1-4793-b8e1-e1340b437ca6",
    CellTags->"AuthorInfo"]},
+ "LastModified"->{
+  Cell[400, 13, 225, 5, 52, "TemplateInstructions",ExpressionUUID->"1d20af4c-4b36-4bac-8bc5-9599211620c2",
+   CellTags->"LastModified"]},
  "PosterContent"->{
   Cell[2026, 63, 234, 5, 67, "TemplateSectionHeaders",ExpressionUUID->"e3c11918-b62c-4e4f-bc19-a4aa32cba637",
    CellTags->"PosterContent"]},
@@ -890,8 +890,8 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"LastModified", 38293, 873},
- {"AuthorInfo", 38448, 876},
+ {"AuthorInfo", 38291, 873},
+ {"LastModified", 38448, 876},
  {"PosterContent", 38606, 879},
  {"PresentationContent", 38774, 882},
  {"ProjectNotes", 38943, 885}
